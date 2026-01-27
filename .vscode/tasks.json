@@ -1,0 +1,65 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "build",
+      "path": "packages/streamdeck-integration",
+      "group": "build",
+      "label": "npm: build - packages/streamdeck-integration",
+      "problemMatcher": ["$tsc"]
+    },
+    {
+      "type": "npm",
+      "script": "watch",
+      "path": "packages/streamdeck-integration",
+      "isBackground": true,
+      "group": "build",
+      "label": "npm: watch - packages/streamdeck-integration",
+      "problemMatcher": ["$tsc-watch"]
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "path": "packages/npm-scripts-deck",
+      "group": "build",
+      "label": "npm: build - packages/npm-scripts-deck",
+      "problemMatcher": ["$tsc"]
+    },
+    {
+      "type": "npm",
+      "script": "watch",
+      "path": "packages/npm-scripts-deck",
+      "isBackground": true,
+      "group": "build",
+      "label": "npm: watch - packages/npm-scripts-deck",
+      "problemMatcher": ["$tsc-watch"]
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "path": "packages/vscode-runner",
+      "group": "build",
+      "label": "npm: build - packages/vscode-runner",
+      "problemMatcher": ["$tsc"]
+    },
+    {
+      "type": "npm",
+      "script": "watch",
+      "path": "packages/vscode-runner",
+      "isBackground": true,
+      "group": "build",
+      "label": "npm: watch - packages/vscode-runner",
+      "problemMatcher": ["$tsc-watch"]
+    },
+    {
+      "label": "build-vscode-extensions",
+      "dependsOn": [
+        "npm: build - packages/streamdeck-integration",
+        "npm: build - packages/npm-scripts-deck"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}

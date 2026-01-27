@@ -1,0 +1,42 @@
+{
+  "name": "vscode-runner",
+  "author": "Masanori Onoue (@ugaya40)",
+  "version": "1.0.0",
+  "description": "Stream Deck plugin for VSCode integration",
+  "type": "module",
+  "main": "com.ugaya40.vscode-runner.sdPlugin/bin/plugin.js",
+  "scripts": {
+    "build": "rollup -c",
+    "build:prod": "NODE_ENV=production rollup -c",
+    "pack": "streamdeck pack com.ugaya40.vscode-runner.sdPlugin --force"
+  },
+  "keywords": [
+    "streamdeck",
+    "vscode"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ugaya40/vscode-deck",
+    "directory": "packages/vscode-runner"
+  },
+  "homepage": "https://github.com/ugaya40/vscode-deck",
+  "bugs": {
+    "url": "https://github.com/ugaya40/vscode-deck/issues"
+  },
+  "devDependencies": {
+    "@elgato/cli": "^1.6.0",
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.18.1",
+    "rollup": "^4.55.1",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "@elgato/streamdeck": "^2.0.1",
+    "ws": "^8.19.0"
+  }
+}

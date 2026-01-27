@@ -1,0 +1,4 @@
+*.js.map
+*.d.ts
+*.d.ts.map
+logs/

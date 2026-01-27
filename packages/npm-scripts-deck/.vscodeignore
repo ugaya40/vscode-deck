@@ -1,0 +1,7 @@
+src/
+**/*.ts
+**/*.map
+**/*.d.ts
+tsconfig.json
+rollup.config.mjs
+.gitignore

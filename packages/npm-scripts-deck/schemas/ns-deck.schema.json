@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ns-deck.json",
+  "description": "Configuration file for NPM Scripts Deck",
+  "type": "object",
+  "properties": {
+    "scripts": {
+      "type": "array",
+      "description": "Array of script names to display. Shows all scripts if omitted.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "separator": {
+      "oneOf": [
+        { "type": "string" },
+        { "type": "boolean", "const": false }
+      ],
+      "description": "false (default): wrap at 7 characters. String value: break lines at that character.",
+      "default": false
+    },
+    "styles": {
+      "type": "array",
+      "description": "Array of style rules for customizing script appearance.",
+      "items": {
+        "$ref": "#/definitions/styleRule"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "styleRule": {
+      "type": "object",
+      "description": "Style rule for matching scripts.",
+      "properties": {
+        "match": {
+          "type": "string",
+          "description": "Script name (exact match) or regex (/pattern/ format)."
+        },
+        "textColor": {
+          "type": "string",
+          "description": "Text color (CSS color value)."
+        },
+        "icon": {
+          "type": "string",
+          "description": "Lucide icon name.",
+          "enum": [
+            "Play",
+            "Package",
+            "Sparkles",
+            "FlaskConical",
+            "FileCheck",
+            "Eye",
+            "Rocket",
+            "Trash2",
+            "Wand2",
+            "DatabaseZap",
+            "Terminal",
+            "Bug",
+            "Download",
+            "Upload",
+            "RefreshCw",
+            "Hammer",
+            "Copy",
+            "Server",
+            "Check",
+            "Zap",
+            "Clock",
+            "Lock",
+            "Book",
+            "GitBranch",
+            "GitCommit",
+            "GitMerge",
+            "FolderOpen",
+            "Send",
+            "Archive",
+            "Container",
+            "Square",
+            "ScrollText",
+            "Search",
+            "Globe",
+            "Wifi",
+            "Settings",
+            "Code"
+          ]
+        }
+      },
+      "required": ["match"],
+      "additionalProperties": false
+    }
+  }
+}

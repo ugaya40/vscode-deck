@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run VSCode Extensions",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/packages/streamdeck-integration",
+        "--extensionDevelopmentPath=${workspaceFolder}/packages/npm-scripts-deck"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/packages/streamdeck-integration/dist/**/*.js",
+        "${workspaceFolder}/packages/npm-scripts-deck/dist/**/*.js"
+      ],
+      "preLaunchTask": "build-vscode-extensions"
+    },
+    {
+      "name": "Run Host Extension Only",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/packages/streamdeck-integration"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/packages/streamdeck-integration/dist/**/*.js"
+      ],
+      "preLaunchTask": "npm: build - packages/streamdeck-integration"
+    },
+    {
+      "name": "Attach to Stream Deck Plugin",
+      "type": "node",
+      "request": "attach",
+      "port": 9229,
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "separator": ":",
+  "styles": [
+    { "match": "/pub/", "textColor": "red", "icon": "Rocket" },
+    { "match": "pack", "textColor": "#ffffff", "icon": "Package" },
+    { "match": "build", "icon": "Package" },
+    { "match": "/build/", "icon": "Hammer" },
+    { "match": "/vs/", "textColor": "#00bfff" },
+    { "match": "/sd/", "textColor": "#ff6600" },
+    { "match": "/ns/", "textColor": "#00ff88" },
+    { "match": "build", "textColor": "#ffffff" }
+  ]
+}

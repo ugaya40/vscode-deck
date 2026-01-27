@@ -1,0 +1,97 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "Author": "Masanori Onoue (@ugaya40)",
+  "Category": "VSCode Runner",
+  "CategoryIcon": "imgs/category",
+  "CodePath": "bin/plugin.js",
+  "Description": "Display and run VSCode commands dynamically from Stream Deck.",
+  "Icon": "imgs/plugin",
+  "Name": "VSCode Runner",
+  "Nodejs": {
+    "Version": "20"
+  },
+  "SDKVersion": 3,
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.15"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "6.9"
+  },
+  "URL": "https://github.com/ugaya40/vscode-deck",
+  "UUID": "com.ugaya40.vscode-runner",
+  "Version": "1.0.0.0",
+  "Actions": [
+    {
+      "Icon": "imgs/action",
+      "Name": "Slot",
+      "PropertyInspectorPath": "pi/property-inspector.html",
+      "States": [
+        {
+          "Image": "imgs/slot"
+        }
+      ],
+      "UUID": "com.ugaya40.vscode-runner.run-command"
+    }
+  ],
+  "ApplicationsToMonitor": {
+    "mac": [
+      "com.microsoft.VSCode",
+      "com.microsoft.VSCodeInsiders"
+    ],
+    "windows": [
+      "Code.exe",
+      "Code - Insiders.exe"
+    ]
+  },
+  "Profiles": [
+    {
+      "Name": "VSCode-Runner-15",
+      "DeviceType": 0,
+      "DontAutoSwitchWhenInstalled": true,
+      "AutoInstall": true
+    },
+    {
+      "Name": "VSCode-Runner-6",
+      "DeviceType": 1,
+      "DontAutoSwitchWhenInstalled": true,
+      "AutoInstall": true
+    },
+    {
+      "Name": "VSCode-Runner-32",
+      "DeviceType": 2,
+      "DontAutoSwitchWhenInstalled": true,
+      "AutoInstall": true
+    },
+    {
+      "Name": "VSCode-Runner-15",
+      "DeviceType": 3,
+      "DontAutoSwitchWhenInstalled": true,
+      "AutoInstall": true
+    },
+    {
+      "Name": "VSCode-Runner-8",
+      "DeviceType": 7,
+      "DontAutoSwitchWhenInstalled": true,
+      "AutoInstall": true
+    },
+    {
+      "Name": "VSCode-Runner-8",
+      "DeviceType": 8,
+      "DontAutoSwitchWhenInstalled": true,
+      "AutoInstall": true
+    },
+    {
+      "Name": "VSCode-Runner-15",
+      "DeviceType": 11,
+      "DontAutoSwitchWhenInstalled": true,
+      "AutoInstall": true
+    }
+  ]
+}

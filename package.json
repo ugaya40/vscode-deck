@@ -1,0 +1,23 @@
+{
+  "name": "vscode-deck",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w packages/streamdeck-integration && npm run build -w packages/npm-scripts-deck && npm run build -w packages/vscode-runner",
+    "build:vs": "npm run build -w packages/streamdeck-integration",
+    "build:sd": "npm run build -w packages/vscode-runner",
+    "build:sd:prod": "npm run build:prod -w packages/vscode-runner",
+    "build:ns": "npm run build -w packages/npm-scripts-deck",
+    "pack:vs": "npm run pack -w packages/streamdeck-integration",
+    "pack:ns": "npm run pack -w packages/npm-scripts-deck",
+    "pack:sd": "npm run build:sd:prod && npm run pack -w packages/vscode-runner",
+    "pack": "npm run pack:vs && npm run pack:ns && npm run pack:sd",
+    "pub:vsix": "npm run pub:vsix -w packages/streamdeck-integration && npm run pub:vsix -w packages/npm-scripts-deck",
+    "pub:npm": "npm run pub:npm -w packages/streamdeck-integration"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.2.2"
+  }
+}
