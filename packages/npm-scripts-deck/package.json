@@ -3,7 +3,7 @@
   "author": "Masanori Onoue (@ugaya40)",
   "displayName": "NPM Scripts Deck",
   "description": "Integrate npm scripts into your Stream Deck.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "ugaya40",
   "icon": "ns.png",
   "license": "MIT",
@@ -51,7 +51,7 @@
     "vscode:prepublish": "NODE_ENV=production npm run build",
     "build": "rollup -c",
     "pack": "vsce package -o ../../ --no-dependencies",
-    "pub:vsix": "vsce publish --no-dependencies"
+    "pub:vsix": "vsce publish --no-dependencies --baseContentUrl https://github.com/ugaya40/vscode-deck/raw/main/packages/npm-scripts-deck/ --baseImagesUrl https://github.com/ugaya40/vscode-deck/raw/main/packages/npm-scripts-deck/"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.0",
