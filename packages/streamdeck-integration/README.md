@@ -3,6 +3,7 @@
 Stream Deck Integration is a host VSCode extension that aggregates button information from multiple compatible providers, sends it to Stream Deck, and mediates command execution requests from Stream Deck.
 
 **This extension does not function on its own.** It requires the Stream Deck plugin [VSCode Runner](https://github.com/ugaya40/vscode-deck/tree/main/packages/vscode-runner) and at least one compatible provider extension (e.g., [Npm Scripts Deck](https://marketplace.visualstudio.com/items?itemName=ugaya40.npm-scripts-deck)) to be installed.
+Normally, this extension is automatically installed as a dependency of a provider extension, so you do not need to install it separately. If you need to install it individually (e.g., for provider development), **[Install from VS Marketplace](https://marketplace.visualstudio.com/items?itemName=ugaya40.vscode-streamdeck-integration)**.
 
 <p align="center">
   <img src="imgs/top.jpg" width="400" />
