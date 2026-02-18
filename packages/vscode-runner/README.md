@@ -1,7 +1,7 @@
 # VSCode Runner
 Display and execute button information dynamically provided from VSCode on your Stream Deck.
 
-> **Important**: This plugin is pending Elgato Marketplace review. Due to current issues with Elgato's developer portal, approval may take a while. In the meantime, download the latest `.streamDeckPlugin` file from [GitHub Releases](https://github.com/ugaya40/vscode-deck/releases) and double-click to install.
+Install from the [Elgato Marketplace](https://marketplace.elgato.com/product/vscode-runner-287cbfd2-4508-4675-b5a2-6f75a52458b7).
 
 This plugin operates based on button information provided by the VSCode extension [Stream Deck Integration](https://marketplace.visualstudio.com/items?itemName=ugaya40.vscode-streamdeck-integration).
 

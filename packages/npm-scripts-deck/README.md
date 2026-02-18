@@ -11,7 +11,7 @@ Even without a physical Stream Deck device, you can use [Virtual Stream Deck](ht
 
 **[Install from VS Marketplace](https://marketplace.visualstudio.com/items?itemName=ugaya40.npm-scripts-deck)**
 
-> This extension requires the Stream Deck plugin [VSCode Runner](https://github.com/ugaya40/vscode-deck/tree/main/packages/vscode-runner). It also requires another VSCode extension [Stream Deck Integration](https://marketplace.visualstudio.com/items?itemName=ugaya40.vscode-streamdeck-integration), which will be automatically installed as a dependency when you install this extension.
+> This extension requires the Stream Deck plugin [VSCode Runner](https://marketplace.elgato.com/product/vscode-runner-287cbfd2-4508-4675-b5a2-6f75a52458b7). It also requires another VSCode extension [Stream Deck Integration](https://marketplace.visualstudio.com/items?itemName=ugaya40.vscode-streamdeck-integration), which will be automatically installed as a dependency when you install this extension.
 
 ## Features
 - Automatically reads npm scripts from package.json, tracks changes, and displays/runs them on Stream Deck
