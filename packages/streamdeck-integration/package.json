@@ -3,7 +3,7 @@
   "author": "Masanori Onoue (@ugaya40)",
   "displayName": "Stream Deck Integration",
   "description": "Stream Deck integration host for VSCode",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "ugaya40",
   "icon": "sdi.png",
   "license": "MIT",

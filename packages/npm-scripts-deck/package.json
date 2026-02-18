@@ -3,7 +3,7 @@
   "author": "Masanori Onoue (@ugaya40)",
   "displayName": "NPM Scripts Deck",
   "description": "Integrate npm scripts into your Stream Deck.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "ugaya40",
   "icon": "ns.png",
   "license": "MIT",
